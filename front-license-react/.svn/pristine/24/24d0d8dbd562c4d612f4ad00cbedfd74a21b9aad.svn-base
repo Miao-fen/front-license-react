@@ -1,0 +1,39 @@
+.qrwrap{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+.qrwrap .title,.qrwrap .foot{
+    height: 50px;
+    line-height: 50px;
+    background: #2C69C4;
+    color: #fff;
+    text-align: center;
+    font-size: 18px;
+}
+.qrwrap .body{
+    flex: 1;
+    padding: 10px 0;
+}
+.qrwrap .body>div{
+    display: flex;
+    flex-direction: row;
+    padding: 5px 10px 5px 20px;
+}
+.qrwrap .body>div>div{
+    line-height: 35px;
+    font-size: 16px;
+}
+.qrwrap .body>div+div{
+    border-top: 1px solid #ccc;
+}
+.qrwrap .body>div>div:first-child{
+    width: 6em;
+    white-space: nowrap;
+}
+.qrwrap .body>div>div:last-child{
+    flex: 1;
+}
+.qrwrap img{
+    max-width: 220px;
+}

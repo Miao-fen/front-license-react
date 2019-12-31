@@ -1,0 +1,31 @@
+import React from 'react'
+import { HashRouter, Route, Redirect, Switch } from 'react-router-dom'
+import Login from './components/loginDemo.js';
+import List from './components/list.jsx';
+import License from './components/license.jsx';
+import Qr from './components/qr.jsx';
+
+class Routes extends React.Component {
+  render() {
+    const username = sessionStorage.getItem('username')
+    return (
+      <HashRouter>
+        <Switch>
+          <Route path='/' render={() => (<Redirect to='/login' />)} exact />
+          <Route path='/login' component={Login} exact />
+          <Route path="/list" component={List} exact />
+          <Route path="/license" component={License} exact />
+          <Route path="/q/:id" component={Qr} exact />
+        </Switch>
+      </HashRouter>
+      // <HashRouter>
+      //   <Route path='/' render={()=>(<Redirect to='/login' />)} exact/>
+      //   <Route path='/login' exact component={ Login } />
+      //   <Route path="/list" render={()=>(username?<List/>:<Redirect to='/login' />)} exact/>
+      //   <Route path="/license" render={()=>(username?<License/>:<Redirect to='/login' />)} exact/>
+      //   <Route path="/q/:id" exact component={ Qr } />
+      // </HashRouter>
+    )
+  }
+}
+export default Routes;

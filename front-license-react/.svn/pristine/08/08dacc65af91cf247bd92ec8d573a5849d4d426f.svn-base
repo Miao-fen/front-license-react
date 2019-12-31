@@ -1,0 +1,43 @@
+.licenseWrap{
+    position: absolute;
+    display: inline-block;
+    margin-left: -1000000px;
+}
+.licenseWrap>div{
+    position: absolute;
+    font-size: 60px;
+    left:800px;
+    color: black;
+    font-family: '宋体';
+    font-variant: normal;
+    font-weight: bold;
+}
+.licenseWrap>.headwrap{
+    top:730px;
+    left:760px;
+}
+.licenseWrap>.headwrap>img{
+    height: 440px;
+    min-width: 380px;
+}
+.licenseWrap>.name{
+    top:1360px;
+}
+.licenseWrap>.career{
+    top:1580px;
+}
+.licenseWrap>.idnumb{
+    top:1790px;
+}
+.licenseWrap>.filenumber{
+    top:1990px;
+}
+.licenseWrap>.time{
+    left:2620px;
+    top:2075px;
+}
+.licenseWrap>.qrCode{
+    left: 3050px;
+    top: 150px;
+    position: absolute;
+}

@@ -1,0 +1,68 @@
+.main_body {
+    height: 100%;
+    width: 100%;
+    overflow-y: auto;
+    overflow-x: hidden;
+    position: relative;
+    padding: 20px;
+    background: #ECF0F5;
+}
+.summary{
+    background: white;
+    border-radius: 6px;
+    padding: 20px 30px;
+    margin-bottom: 20px;
+    display: inline-block;
+    width:100%;
+}
+.setOption{
+    display: inline-block;
+    margin-right: 30px;
+    white-space: nowrap;
+    padding: 5px 0;
+}
+.newTableWrap {
+    background: white;
+    position: relative;
+    overflow: hidden;
+    min-height: 300px;
+    border-radius: 6px;
+    padding: 15px 30px;
+}
+.setOption input{
+    width: 300px;
+}
+.searchBtn{
+    width: 100px;
+}
+.searchBtn.fr{
+    float: right;
+    margin-top: 5px;
+}
+#root{
+    height: 100%;
+}
+.licenseForm>div{
+    margin: 15px 0;
+}
+.licenseForm label{
+    width: 120px;
+    display: inline-block;
+    text-align: right;
+}
+.licenseForm input{
+    width: 300px;
+}
+.formFoot input,.formFoot button{
+    width: 200px;
+}
+.avatar-uploader.ant-upload-picture-card-wrapper {
+    width: 200px;
+}
+.ant-spin{
+    position: absolute;
+    position: absolute;
+    left: calc(50% - 16px);
+    top: calc(50% - 18px);
+    z-index: 1;
+}

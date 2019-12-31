@@ -11,6 +11,13 @@ class demo extends Component {
             isShow: false
         }
     }
+    componentDidMount = () => {
+        window.addEventListener('keypress', e => {
+            if (e.which == 13) {
+                this.handleLogin()
+            }
+        })
+    }
     handleLogin = () => {
         const { validateFields } = this.props.form;
         validateFields(['username', 'password'], (err, values) => {
@@ -19,7 +26,7 @@ class demo extends Component {
                     axios.post("/jkz/login/userLogin", qs.stringify({
                         username: values.username,
                         password: values.password
-                    })).then((res) => {
+                    })).then(res => {
                         console.log(res)
                         let data = res.data
                         if (data.respCode === "1000000") {
